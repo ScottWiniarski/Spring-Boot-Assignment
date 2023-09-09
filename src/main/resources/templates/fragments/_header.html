@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head th:fragment="head(pageTitle)">
+    <meta charset="UTF-8">
+    <title th:text="${pageTitle}"></title>
+    <link rel="stylesheet" th:href="@{/style.css}">
+</head>
+<body>
+<header th:fragment="header">
+    <a th:href="@{/}">To Index</a>
+    <nav>
+        <ul>
+            <li><a th:href="@{/steps/stepOne}">Step One</a></li>
+            <li><a th:href="@{/steps/stepTwo}">Step Two</a></li>
+            <li><a th:href="@{/steps/stepThree}">Step Three</a></li>
+        </ul>
+    </nav>
+</header>
+
+</body>
+</html>

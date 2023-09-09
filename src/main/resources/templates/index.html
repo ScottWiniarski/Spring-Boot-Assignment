@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/_header :: head(pageTitle = 'Three Easy Steps to Change A Tire')">
+</head>
+<body>
+<div th:insert="fragments/_header :: header"></div>
+<h1>How To Change A Flat Tire</h1>
+<p>
+    You've come to this page in search of answers, answers we can provide.
+</p>
+
+<img th:src="@{https://www.parliament.uk/contentassets/aa8b9933d3cb4364b827e7a60ea898e0/hl_library_roger-harris2022.jpg?width=1000&quality=85}">
+<p style="font-size: small"> Thanks to the UK Parliament and the House of Lords Library <br>
+<a href="https://www.parliament.uk/business/lords/work-of-the-house-of-lords/lords-library/">Image Source Here</a>
+</p>
+
+<div th:insert="fragments/_footer :: footer"></div>
+</body>
+</html>

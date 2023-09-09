@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/_header :: head(pageTitle='Step One: Identify the Problem')">
+</head>
+<body>
+<div th:insert="fragments/_header :: header"></div>
+
+<h1>Observing The Flat Tire</h1>
+
+<p>The extraordinary vehicle owner is wise to regularly examine their property, less unfortunate events like this might occur.</p>
+<!--<img src="https://st4.depositphotos.com/1784615/21956/i/1600/depositphotos_219566498-stock-photo-destroyed-blown-out-tire-exploded.jpg">-->
+<img th:src="@{https://st4.depositphotos.com/1784615/21956/i/1600/depositphotos_219566498-stock-photo-destroyed-blown-out-tire-exploded.jpg}" alt="Spotting a damaged tire">
+<p style="font-size: small">Thanks to Depositphotos, and the creator Lusoimages
+<br> <a href="https://depositphotos.com/photo/destroyed-blown-out-tire-exploded-shredded-damaged-rubber-modern-suv-219566498.html">Image Source</a>
+</p>
+
+<div th:insert="fragments/_footer :: footer"></div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/_header :: head(pageTitle = 'Step Two: Changing the Tire')">
+</head>
+<body>
+<div th:insert="fragments/_header :: header"></div>
+
+<h1>Changing the Tire</h1>
+
+<p>Consult the owner's manuel for more specific instructions regarding your vehicle, and for the location of a portable carjack if provided.
+However, if none are present, ensure you have access to the correct tool for the job, namely a "lug wrench" or "tire iron". In the United Kingdom
+  and Australia, it is known as a wheel brace. All of which is a type of socket wrench to loosening or tightening lug nuts on the wheels of your vehicles.
+</p>
+
+<!--<img src="https://d1gymyavdvyjgt.cloudfront.net/drive/images/uploads/headers/ws_cropper/1_0x0_790x520_0x520_flattyre.jpg">-->
+<img th:src="@{https://d1gymyavdvyjgt.cloudfront.net/drive/images/uploads/headers/ws_cropper/1_0x0_790x520_0x520_flattyre.jpg}" alt="Removing Lug Nuts from Tire">
+<p style="font-size: small">Thanks to rac.co.uk for the source of the image.
+  <br> <a href="https://www.rac.co.uk/drive/advice/car-maintenance/how-to-change-a-tyre/">Click for Image Source</a></p>
+
+<p>
+  Ensure your vehicle is parked and turned off, preferably with the parking break engaged.
+  Then proceed to utilize the provided carjack to lift the tire in need of replacment off the road
+  by orientating the carjack beneath the axel or suspension nearest the wheel.
+</p>
+
+<p>Proceed to loosen each lug nut, but not fully remove them until all are loosened. This prevents the tire from wobbling around
+too much while working on the nuts. Then proceed to remove all the nuts, place them in a safe location, then remove the actual tire.
+
+<div th:insert="fragments/_footer :: footer"></div>
+</body>
+</html>
